@@ -1,6 +1,6 @@
 {% extends 'base.html'%}
 
-{% block conteudo %} 
+{% block content %}
 
 <div class="container my-4 mb-5 pb-4 " id="containerIndex">
 
@@ -32,7 +32,7 @@
                        class="form-control"
                        id="inputCpf"
                        placeholder="Digite o CPF"
-                       value="{{ formData.cpf | default('') }}">
+                       value="{{ formData.cpf is not null ? maskCpf(formData.cpf) : '' }}">
             </div>
 
             <div class="col-xxl">
@@ -94,7 +94,7 @@
                 <tr>
                     <th class="text-center" scope="row">{{register.id}}</th>
                         <td>{{register.name}}</td>
-                        <td class="text-center">{{register.cpf}}</td>
+                        <td class="text-center">{{maskCpf(register.cpf)}}</td>
                         <td class="text-center">{{register.creci}}</td>
                         <td class="col-sm-3 text-center">
                             <button type="button"
