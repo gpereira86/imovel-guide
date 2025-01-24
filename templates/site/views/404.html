@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+
+<div class="d-flex justify-content-center align-items-center vh-75">
+    <div class="p-4 border">
+
+
+            <h1 class="text-center pb-3">Página não encontrada</h1>
+
+            {{flash}}
+
+            <div class="text-center">
+                <img class="img-fluid pt-2" src="{{ url('templates/site/assets/img/404.png') }}" alt="alt" style="max-width: 30%; max-height: 30%;"/>
+                <p style="margin-top: -1rem;">
+                    <a class="text-decoration-none" href="http://www.freepik.com" style="font-size: 0.7rem; color: inherit;">Designed by Freepik</a>
+                </p>
+            </div>
+
+            <h2 class="text-center pt-3" >
+                <a class="text-decoration-none" href="{{url('/')}}" style="color: inherit;">
+                    <button type="button" class="btn btn-outline-dark btn-lg">Voltar para página inicial</button>
+                </a>
+            </h2>
+
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}

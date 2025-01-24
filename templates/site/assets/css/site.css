@@ -1,0 +1,32 @@
+.custom-footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.default_colors {
+    background-color: #1b2653;
+    color: white;
+}
+
+.custom_link{
+    color: white;
+    text-decoration: none;
+}
+
+.custom_link:hover {
+    color: lightgray;
+    opacity: 0.5;
+}
+
+.custom_button{
+    background-color: #1b2653;
+    color: white;
+}
+
+.custom_button:hover{
+    background-color: #2b3873;
+    color: lightgray;
+    opacity: 0.8;
+}
+

@@ -1,0 +1,29 @@
+{
+    "name": "user/imovel-guide",
+    "description": "Teste Imovel Guide",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "system\\": "system/"
+        },
+        "files":[
+            "system/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Glauco Pereira",
+            "email": "eu@glaucopereira.com",
+            "homepage": "https://www.glaucopereira.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2",
+        "twig/twig": "3.3",
+        "digitalnature/php-ref": "dev-master",
+        "vlucas/phpdotenv": "^5.6@dev",
+        "nikic/fast-route": "^2.0@dev"
+    }
+}

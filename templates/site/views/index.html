@@ -1,0 +1,125 @@
+{% extends 'base.html'%}
+
+{% block conteudo %} 
+
+<div class="container my-4 mb-5 pb-4 " id="containerIndex">
+
+    <div class="container text-center">
+
+
+        </div>
+
+    <div class="container w-75">
+
+        <h4 class="text-center">
+            {% if formData.id %}
+                Edição do cadastro do Corretor: {{formData.name}}
+            {% else %}
+                Cadastro de Corretor
+            {% endif %}
+        </h4>
+
+        {{ flash() }}
+
+        <form action="{% if formData.id %}{{ url('salvar-edicao/'~formData.id) }}{% else %}{{ url('cadastrar') }}{% endif %}"
+              method="POST"
+              class="row g-3"
+              id="formData">
+
+            <div class="col-xxl">
+                <input type="text"
+                       name="cpf"
+                       class="form-control"
+                       id="inputCpf"
+                       placeholder="Digite o CPF"
+                       value="{{ formData.cpf | default('') }}">
+            </div>
+
+            <div class="col-xxl">
+                <input type="text"
+                       name="creci"
+                       class="form-control"
+                       id="inputCreci"
+                       placeholder="Digite o número do Creci"
+                       value="{{ formData.creci | default('') }}">
+            </div>
+
+            <div class="col-sm-12">
+                <input type="text"
+                       name="name"
+                       class="form-control"
+                       id="inputName"
+                       placeholder="Digite seu nome"
+                       value="{{ formData.name | default('') }}">
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn px-4 mb-3 col-sm-auto custom_button">
+                    {% if formData.id %}
+                        Salvar
+                    {% else %}
+                        Enviar
+                    {% endif %}
+                </button>
+
+                {% if formData.id %}
+                <button type="button"
+                        class="btn px-4 mb-3 col-sm-auto custom_button"
+                        onclick="window.location.href='{{ url() }}'">
+                    Limpar Formulário
+                </button>
+                {% endif %}
+
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container mt-4">
+        <table class="table table-bordered border-secondary">
+            <thead class="table-light text-center">
+                <tr>
+                    <th class="p-2" scope="col">ID</th>
+                    <th scope="col">NOME</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">CRECI</th>
+                    <th scope="col">AÇÕES</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            {% for register in registers %}
+
+                <tr>
+                    <th class="text-center" scope="row">{{register.id}}</th>
+                        <td>{{register.name}}</td>
+                        <td class="text-center">{{register.cpf}}</td>
+                        <td class="text-center">{{register.creci}}</td>
+                        <td class="col-sm-3 text-center">
+                            <button type="button"
+                                    class="btn custom_button"
+                                    onclick="clearFormAndRedirect('{{ url('editar/' ~ register.id) }}')">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                Editar
+                            </button>
+                            <button
+                                    type="button"
+                                    class="btn ms-2 custom_button"
+                                    onclick="window.location.href='{{ url('deletar/' ~ register.id) }}'">
+                                <i class="fa-regular fa-trash-can"></i>
+                                Excluir
+                            </button>
+                        </td>
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+
+        </table>
+    </div>
+</div>  
+
+{% endblock %}

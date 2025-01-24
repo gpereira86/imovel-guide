@@ -1,0 +1,20 @@
+<footer class="custom-footer d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mb-0 border-top fixed-bottom default_colors">
+    <p class="col-md mb-0 text-body-secondary-wite ps-4 text-start">&copy; 2024-{{ "now"|date("Y") }} - {{ constant('SITE_DESCRIPTION') }}</p>
+    
+    <a href="/" class="col-md d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    </a>
+    
+    <ul class="nav col-md justify-content-end text-end text-body-secondary-wite">
+        <li class="nav-item px-2">(Levou {{tempoCarregamento()}} segundo(s) para carregar)</li>
+
+        <li class="nav-item px-2"> | </li>
+
+        <li class="nav-item">
+            <a href="https://github.com/gpereira86" target="_blank" class="px-2 custom_link">
+                <i class="fa-brands fa-github"></i> Glauco Pereira
+            </a>
+        </li>
+
+    </ul>
+</footer>

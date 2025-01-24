@@ -1,0 +1,49 @@
+TESTE PRÁTICO DE PROGRAMAÇÃO (PARTE 1)
+
+- Conhecimentos avaliados: PHP, HTML5/CSS3/JavaScript e MySQL.
+- Para o desenvolvimento do teste você pode utilizar frameworks disponíveis para acelerar o desenvolvimento.
+- Assista o vídeo explicativo da prova no link: https://drive.google.com/file/d/1W7sP68rQ6jSgUCGYqrXYBUj32Wkc0Nkb/view?usp=share_link
+- Assista o vídeo explicativo de um exemplo já feito: https://drive.google.com/file/d/1PvTfawBt2CSy7qZqmNZhcdp8UyECsVr5/view?usp=sharing
+
+1º - Crie uma página HTML igual a imagem abaixo com os campos: CPF, Creci e Nome e um botão “Enviar” (0.5 ponto).
+
+
+2º - Faça validação do formulário do jeito que achar melhor, seja usando HTML5 ou JavaScript. Sendo obrigatório que o CPF tenha 11 caracteres, Creci e o Nome tenha pelo menos 2 caracteres (1.0 ponto).
+
+3º - Crie um banco de dados em MYSQL e utilize a linguagem PHP para realizar o cadastro, com uma tabela chamada “corretores” para cadastrar os dados abaixo. Necessário persistir os dados ao recarregar a página (não salve no seu navegador e sim no banco de dados) (0.5 pontos).
+Exemplo:
+
+id	name	cpf	creci
+1	André Nunes	12345678910	1234
+
+
+4º - Grave os dados ao enviar o formulário, após ser cadastrado redirecione para a tela do formulário novamente com ele limpo. (1.5 ponto).
+
+5º - Faça os dados da tabela corretores aparecerem em uma tabela abaixo do formulário. (1.0 ponto)
+
+6º - Dentro da tabela, apresente um botão de Editar e Excluir, para cada registro (1.5 ponto)
+
+7º - Faça a função de Excluir um registro. (1.0 ponto)
+
+
+Diferenciais que vão lhe trazer uma maior nota caso você consiga fazer também
+1º - Criar a função Editar, carregando as informações no formulário acima e trocar o botão de “Enviar” para “Salvar”
+2º - Mostrar se a operação de Cadastro, Edição ou Exclusão foi realizada com sucesso em cima do formulário.
+3º - Validar a quantidade de caracteres dos campos, CPF, CRECI e nome pelo PHP.
+4º - Boas práticas de programações e tratamento de erros e exceções.
+APÓS FINALIZAR SEU TESTE PRÁTICO
+
+PASSO 1
+Faça uma gravação da sua tela demonstrando o funcionamento das funcionalidades que você criou, grave também o banco de dados na forma inicial é após a inserções e remoções. (Você pode utilizar por exemplo: Obs Studio, ou https://gravadordetela.com ou gravar de outra forma que preferir)
+
+PASSO 2
+Salve esse vídeo em seu drive e deixe o link compartilhado de forma pública.
+
+
+
+PERGUNTAS SOBRE VOCÊ (PARTE 2)
+
+Acesse o link abaixo, preencha com seus dados e cole o link do vídeo para nossa avaliação.
+https://forms.gle/KE7hJdfZiBwQSgZu7
+
+Após finalizar a parte 2 basta clicar no botão “Enviar” que existe no formulário do link acima que vamos receber seus testes e entraremos em contato.
