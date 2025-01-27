@@ -2,6 +2,7 @@
 
 namespace system\Controller;
 
+use system\Model\RecaptchaValidator;
 use system\Core\Helpers;
 use system\Core\Controller;
 use system\Model\SiteModel;
@@ -54,7 +55,10 @@ class SiteController extends Controller
      */
     public function saveRegister(): void
     {
+
         $data = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+
         if (isset($data)) {
 
             if ($this->dataValidation($data)) {
@@ -139,6 +143,7 @@ class SiteController extends Controller
                 }
             }
         }
+
         echo $this->template->toRender('index.html', [
             'registers' => (new SiteModel())->search()->result(true),
             'formData' => $data

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d5b550ab345da90e8722bb258d3f0c0",
+    "content-hash": "7710d1febcc40cabc898481c33b72c6e",
     "packages": [
         {
             "name": "digitalnature/php-ref",
@@ -711,14 +711,14 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "digitalnature/php-ref": 20,
-        "nikic/fast-route": 20,
-        "vlucas/phpdotenv": 20
+        "vlucas/phpdotenv": 20,
+        "nikic/fast-route": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0"
+        "php": ">=8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
