@@ -3,7 +3,7 @@
 ## Sobre o Projeto
 Este é um sistema simples e eficiente para inclusão, edição e exclusão de corretores no banco de dados. O projeto foi desenvolvido com foco em boas práticas e organização de código, utilizando a arquitetura **MVC** para separar responsabilidades.
 
-Link para acesso ao projeto online: https://testimovelguide.glaucopereira.com/
+- <a href="https://testimovelguide.glaucopereira.com/" target="_blank">Link para acesso ao projeto já online</a><br><br>
 
 ## Tecnologias Utilizadas
 - **PHP 7.4** (puro, sem frameworks ou bibliotecas externas)
