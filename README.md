@@ -31,12 +31,13 @@ O sistema segue a arquitetura **MVC (Model-View-Controller)**, garantindo um có
    git clone https://github.com/gpereira86/imovel-guide.git
    ```
 2. Configure os dados do projeto como banco de dados e url no arquivo `config.php` e avalie alteração no arquivo `.htaccess`
-3. Inicie um servidor local (Apache, Nginx ou built-in do PHP)
+3. Caso não tenha o composer instale, em no terminal, navegue até o caminho da raiz deste projeto e execute o comando `composer update`
+4. Inicie um servidor local (Apache, Nginx ou built-in do PHP)
    ```bash
    php -S localhost:8000
    ```
    ou inicie o xaamp.
-4. Acesse `http://localhost:8000` no navegador ou o correspondente no xaamp
+5. Acesse `http://localhost:8000` no navegador ou o correspondente no xaamp
 
 ## Contribuição
 Sinta-se à vontade para contribuir com melhorias! Sugestões e PRs são bem-vindos.
