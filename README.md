@@ -6,7 +6,7 @@ Este é um sistema simples e eficiente para inclusão, edição e exclusão de c
 - <a href="https://testimovelguide.glaucopereira.com/" target="_blank">Link para acesso ao projeto já online</a><br><br>
 
 ## Tecnologias Utilizadas
-- **PHP 7.4** (puro, sem frameworks ou bibliotecas externas)
+- **PHP 8.2**
 - **JavaScript**
 - **HTML5**
 - **Bootstrap 5**
